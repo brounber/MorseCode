@@ -10,21 +10,22 @@
 <body>
   <header>
     <h1>Morse Code Converter</h1>
-    <p>Convert Text to Morse Code</p>
   </header>
   <main>
-    <form class="convert-form">
+    <div class="convert-form">
       <!--User Enter phrases in english-->
-      <label for="textToConvert">English:</label>
-      <input type="text" id="textToConvert" name="textToConvert" placeholder="Input as English">
+      <label for="input">Enter Phase:</label>
+      <input type="text" id="input" name="input" placeholder="Input">
       <!--Message converts to Morse Code-->
-      <label for="textbox">Morse Code:</label> 
-      <p id="newText" ></p>
-      <input type="reset" value="Clear">
-      <button onclick="convert()">Convert</button>
-    </form>
+      <label for="textbox">Output:</label> 
+      <p id="outPut" ></p>
+      <button class="button" id="convertToMorse">Convert to Morse Code</button>
+      <button class="button" id="convertToEnglish">Convert to English</button>
+      
+  </div>
+    
   </main>
   
 </body>
-<script src="./home.js"></script>
+<script type="module" src="./index.js"></script>
 </html>
